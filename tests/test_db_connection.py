@@ -4,12 +4,12 @@ import pytest
 
 @pytest.fixture(scope = "module")
 def base():
-    print(" =======setup=========")
+    print(" =======setup starting ...=========")
 
     db = StudentDB()
     db.connection('tests/dataa.json')
     yield db
-    print("\n ========tear down =======")
+    print("\n ========finishing ..... =======")
 
 
 def test_std1(base):
