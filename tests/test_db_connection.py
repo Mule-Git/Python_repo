@@ -7,7 +7,7 @@ def base():
     print(" =======setup=========")
 
     db = StudentDB()
-    db.connection('/Users/mule/Desktop/Learnings/Learning_Python/python_test_project/tests/dataa.json')
+    db.connection('dataa.json')
     yield db
     print("\n ========tear down =======")
 
