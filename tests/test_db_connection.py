@@ -7,7 +7,7 @@ def base():
     print(" =======setup=========")
 
     db = StudentDB()
-    db.connection(Python_repo/tests/dataa.json')
+    db.connection('Python_repo/tests/dataa.json')
     yield db
     print("\n ========tear down =======")
 
